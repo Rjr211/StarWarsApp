@@ -56,6 +56,10 @@ app.get("/api/characters", function(req, res) {
   return res.json(characters);
 });
 
+app.delete("/api/characters/:character",function(res, req){
+  
+})
+
 // Displays a single character, or returns false
 app.get("/api/characters/:character", function(req, res) {
   var chosen = req.params.character;
