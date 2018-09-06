@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars - Express</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <style>
+        .jumbotron {
+      height: 250px;
+        background-image: url("http://gamerselite.com/wp-content/uploads/2017/09/star_wars_twitter_banner_by_kingkittymf-d97g7bt.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      
+      body {
+        background-color: lightgray;
+      }
+      
+                #all {
+                     position: absolute;
+                     top: 30%;
+                     left: 40%;
+                 }
+                 
+                 @keyframes vral {
+                     
+                     0% { 
+                         transform: translate3d(0px, 0px, 0px);
+                         transform: rotate(0deg);
+                     }
+                     
+                     50% {
+                         transform: translate3d(400px, 100px, 0px);
+                         transform: rotate(30deg);
+                     }
+                     
+                     100% {
+                         transform: translate3d(0px, 0px, 0px);
+                         transform: rotate(0deg);
+                     }
+                 }
+                 
+                 .luke {
+                     width: 100px;
+                     float: left;
+                     height: 400px;
+                     animation: vral 2s infinite;
+                     position: absolute;
+                     z-index: -200;
+                 }
+                 
+                   @keyframes nans {
+                     
+                     0% { 
+                         transform: translate3d(0px, 0px, 0px);
+                         transform: rotate(0deg);
+                     }
+                     
+                     50% {
+                         transform: translate3d(400px, 100px, 0px);
+                         transform: rotate(-30deg);
+                     }
+                     
+                     100% {
+                         transform: translate3d(0px, 0px, 0px);
+                         transform: rotate(0deg);
+                     }
+                 }
+                 
+                 .vader {
+                     margin-left: 60px;
+                   margin-top: 10px;
+                     width: 100px;
+                     height: 400px;
+                     animation: nans 2s infinite;
+                     z-index: -200;
+                 }
+                 
+      </style>
+      
+      
+      
+
+  <div class="container">
+    <div class="jumbotron">
+      </div>
+        <div class="row">
+            <div class="col-lg-12">
+    
+    
+
+
+
+
+
+    <div class="row">
+        <div class="col-lg-12">
+
+
+
+
+            <div id="all">
+                <div class="luke">
+                    
+                    <svg x="0px" y="0px"
+                viewBox="0 0 50 200" style="enable-background:new 0 0 50 200;" xml:space="preserve">
+             <style type="text/css">
+               .sabreluke{fill:#f6f6f6;}
+               .st1{fill:#808080;}
+               .st2{fill:#1A1A1A;}
+             </style>
+             <g>
+               
+                 <image style="overflow:visible;opacity:0.87;" width="39" height="154" xlink:href="data:image/png;base64,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
+             RK5CYII=" transform="matrix(1 0 0 1 5.2471 3.3689)">
+               </image>
+               <g>
+                 <path class="sabreluke" d="M25.5,142.2h-1.1c-2,0-3.6-1.6-3.6-3.6v-116c0-2,1.6-3.6,3.6-3.6h1.1c2,0,3.6,1.6,3.6,3.6v116
+                   C29.2,140.6,27.6,142.2,25.5,142.2z"/>
+               </g>
+             </g>
+             <g>
+               <rect x="19.5" y="137.6" class="st1" width="11.1" height="46.6"/>
+               <rect x="19.5" y="137.6" class="st2" width="11.1" height="6.9"/>
+               <rect x="19.5" y="137.6" class="st2" width="11.1" height="6.9"/>
+               <rect x="19.5" y="149.6" class="st2" width="11.1" height="15.6"/>
+               <rect x="19.5" y="176.4" class="st2" width="11.1" height="7.8"/>
+             </g>
+             </svg>
+                    
+                     </div>
+                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                     <div class="vader">
+                       
+                         
+                       <svg x="0px" y="0px"
+                viewBox="0 0 50 200" style="enable-background:new 0 0 50 200;" xml:space="preserve">
+             <style type="text/css">
+               .sabrevader{fill:#f6f6f6;}
+               .st1{fill:#808080;}
+               .st2{fill:#1A1A1A;}
+             </style>
+             <g>
+               
+                 <image style="overflow:visible;opacity:0.87;" width="40" height="154" xlink:href="data:image/png;base64,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
+             vwIMAM6ze/QENpOgAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 4.5078 -0.1667)">
+               </image>
+               <g>
+                 <path class="sabrevader" d="M24.3,138.2L24.3,138.2c-2.4,0-4.4-2-4.4-4.4V19.3c0-2.4,2-4.4,4.4-4.4h0c2.4,0,4.4,2,4.4,4.4v114.5
+                   C28.7,136.2,26.8,138.2,24.3,138.2z"/>
+               </g>
+             </g>
+             <g>
+               <rect x="18.8" y="133.1" class="st1" width="11.1" height="46.6"/>
+               <rect x="18.8" y="133.1" class="st2" width="11.1" height="6.9"/>
+               <rect x="18.8" y="133.1" class="st2" width="11.1" height="6.9"/>
+               <rect x="18.8" y="145.1" class="st2" width="11.1" height="15.6"/>
+               <rect x="18.8" y="171.9" class="st2" width="11.1" height="7.8"/>
+             </g>
+             </svg>
+             
+                         
+                     </div>
+                 </div>
+
+             </div>
+             </div>
+             
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Add Characters</strong></h3>
+          </div>
+          <div class="panel-body">
+            <form method="POST" role="form">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" class="form-control" id="role">
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age">
+              </div>
+
+              <div class="form-group">
+                <label for="force-points">Force Points</label>
+                <input type="text" class="form-control" id="force-points">
+              </div>
+
+            </form>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+           
+              <button type="submit" class="btn btn-primary btn-lg float-right" id="add-btn"><span class="fa fa-fire"></span> Add to the Force</button>
+            
+                  <a href="/"><button class="btn btn-danger btn-lg float-left"><span class="fa fa-eye"></span> View Characters</button></a>
+                  
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newCharacter = {
+        name: $("#name").val().trim(),
+        role: $("#role").val().trim(),
+        age: $("#age").val().trim(),
+        forcePoints: $("#force-points").val().trim()
+      };
+
+      // Question: What does this code do??
+      $.post("/api/characters", newCharacter)
+        .then(function(data) {
+          console.log("add.html", data);
+          alert("Adding character...");
+        });
+    });
+  </script>
+
+</body>
+</html>

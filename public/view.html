@@ -4,14 +4,93 @@
   <meta charset="UTF-8">
   <title>Star Wars - Express</title>
   <!-- Latest compiled and minified CSS & JS -->
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 
 </head>
 <body>
+<!--Using inline style because issue with "MIME type"-->
+<style>
+  .jumbotron {
+height: 250px;
+  background-image: url("http://gamerselite.com/wp-content/uploads/2017/09/star_wars_twitter_banner_by_kingkittymf-d97g7bt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+body {
+  background-color: lightgray;
+}
+
+          #all {
+               position: absolute;
+               top: 30%;
+               left: 40%;
+           }
+           
+           @keyframes vral {
+               
+               0% { 
+                   transform: translate3d(0px, 0px, 0px);
+                   transform: rotate(0deg);
+               }
+               
+               50% {
+                   transform: translate3d(400px, 100px, 0px);
+                   transform: rotate(30deg);
+               }
+               
+               100% {
+                   transform: translate3d(0px, 0px, 0px);
+                   transform: rotate(0deg);
+               }
+           }
+           
+           .luke {
+               width: 100px;
+               float: left;
+               height: 400px;
+               animation: vral 2s infinite;
+               position: absolute;
+               z-index: -200;
+           }
+           
+             @keyframes nans {
+               
+               0% { 
+                   transform: translate3d(0px, 0px, 0px);
+                   transform: rotate(0deg);
+               }
+               
+               50% {
+                   transform: translate3d(400px, 100px, 0px);
+                   transform: rotate(-30deg);
+               }
+               
+               100% {
+                   transform: translate3d(0px, 0px, 0px);
+                   transform: rotate(0deg);
+               }
+           }
+           
+           .vader {
+               margin-left: 60px;
+             margin-top: 10px;
+               width: 100px;
+               height: 400px;
+               animation: nans 2s infinite;
+               z-index: -200;
+           }
+           
+</style>
+
+
+
+
 
   <div class="container">
     <div class="jumbotron">
@@ -240,7 +319,6 @@
             <h1 class="text-center">Star Wars Express</h1>
     <h3 class="text-center">The greatest resource in the galaxy for Star Wars statistics!</h3>
     <hr>
-    <a href="/add"><button class="btn btn-danger btn-lg center"><span class="fa fa-plus"></span> Add New Character</button></a> 
     <br>
 </div>
 </div>
@@ -254,6 +332,7 @@
           <div class="panel-body">
             <input type="text" id="character-search" class="form-control">
             <br>
+            <a href="/add"><button class="btn btn-danger btn-lg center"><span class="fa fa-plus"></span> Add New Character</button></a> 
             <div class="text-right">
               <button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="fa fa-search"></span> Search Your Feelings. You know it is true.</button>
 
@@ -288,6 +367,7 @@
       // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
       searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
 
+
       $.get("/api/characters/" + searchedCharacter, function(data) {
         console.log(data);
         if (data) {
@@ -299,6 +379,7 @@
         }
         else {
           $("#name").text("The force is not strong with this one. Your character was not found.");
+          $("#name").css("color", "#FAFE88");
           $("#stats").hide();
         }
       });
